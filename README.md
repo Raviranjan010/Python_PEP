@@ -8,7 +8,6 @@
 
 ### 1. 🔰 Introduction
 *   [Language Fundamentals](Introduction/1_Language_Fundamentals.md) - High vs Low level, Compiler vs Interpreter.
-*   [Features of Python](Introduction/readme.md#-features-of-python-programming-language) - Why Python?
 
 ### 2. 🧬 Data Types
 *   [Overview](Python_Language_Notes/01_Data_Types/01_Overview.md) - Mutable vs Immutable, Classification.
