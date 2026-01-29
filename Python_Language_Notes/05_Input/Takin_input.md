@@ -1,5 +1,5 @@
 
-# 🐍 Python `input()` and `eval()` — Complete Beginner Guide
+# 🐍 Python `input()` and `eval()` 
 
 This guide explains how **`input()`**, **string concatenation**, **`type()`**, and **`eval()`** work in Python, with clear examples and outputs.
 
@@ -129,4 +129,3 @@ float(input())
 
 ---
 
-✨ **Happy Learning Python!**
