@@ -1,11 +1,11 @@
-# Sets in Python (`set`)
+# 📦 Sets in Python (`set`)
 
-A **Set** is an **unordered** collection of **unique** elements. It does **not** support indexing or slicing.
+A **Set** is an **unordered** collection of **unique** and **immutable** elements. It is highly optimized for mathematical operations and membership testing.
 
 **Syntax**: `{item1, item2, ...}`
 
 ```python
-s = {1, 2, 3, 4}
+s = {10, 20, 30, 40}
 ```
 
 ---
@@ -91,3 +91,40 @@ print(set("45.6"))
 print(set("5.55"))
 # Output: {'5', '.'} (Duplicates '5' removed)
 ```
+"""
+Sets Lab - Examples and Explanations
+Based on recent session.
+"""
+
+# ---------------------------------------------------------
+# 1. Union Operation
+# ---------------------------------------------------------
+a = {2, 3, 'Tina', 10+10j}
+t = (10, 5)
+
+# Note: set.union(t) raises TypeError because 'set' is the class.
+# We must use an instance of a set to call union, or pass the set as the first argument.
+# Correct: a.union(t)
+result = a.union(t)
+print(f"Union result: {result}")
+# Result contains unique elements from both 'a' and 't'.
+
+# ---------------------------------------------------------
+# 2. Adding Elements
+# ---------------------------------------------------------
+# set.add() takes exactly one argument.
+# The element must be immutable (hashable).
+
+# Adding an integer
+a.add(40)
+
+# Adding a tuple (Immutable -> Allowed)
+a.add((2, 22))
+
+# Adding another tuple
+a.add(("Raju", 3))
+
+print(f"Updated Set: {a}")
+
+# Note: We cannot add a list to a set because lists are mutable (unhashable).
+# a.add([1, 2])  # Raises TypeError
